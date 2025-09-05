@@ -13,18 +13,18 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8 animate-slide-up">
-            <Badge variant="secondary" className="w-fit">
+            <Badge variant="secondary" className="w-fit animate-fade-in">
               <Leaf className="h-3 w-3 mr-1" />
-              Sustainable Fashion Revolution
+              Revolución de la Moda Sostenible
             </Badge>
             
             <div className="space-y-4">
-              <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight">
+              <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight animate-slide-up">
                 Intercambia Ropa de
                 <span className="text-transparent bg-gradient-primary bg-clip-text"> Manera Sostenible</span>
               </h1>
               
-              <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-lg">
+              <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-lg animate-fade-in">
                 SwapMe es la app que te permite intercambiar y vender ropa de segunda mano. 
                 Únete a la revolución de la moda circular y contribuye al cuidado del planeta.
               </p>

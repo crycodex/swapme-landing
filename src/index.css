@@ -8,50 +8,50 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 120 25% 98%;
-    --foreground: 120 20% 10%;
+    --background: 100 10% 75%;
+    --foreground: 0 0% 7%;
 
-    --card: 120 15% 96%;
-    --card-foreground: 120 20% 10%;
+    --card: 0 0% 99%;
+    --card-foreground: 0 0% 7%;
 
-    --popover: 120 15% 98%;
-    --popover-foreground: 120 20% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 7%;
 
-    --primary: 142 71% 45%;
-    --primary-foreground: 120 25% 98%;
-    --primary-glow: 142 65% 55%;
+    --primary: 84 100% 68%;
+    --primary-foreground: 0 0% 0%;
+    --primary-glow: 84 100% 75%;
 
-    --secondary: 120 20% 90%;
-    --secondary-foreground: 120 20% 15%;
+    --secondary: 250 100% 65%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 120 15% 92%;
-    --muted-foreground: 120 10% 45%;
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 22%;
 
-    --accent: 138 45% 85%;
-    --accent-foreground: 120 20% 15%;
+    --accent: 84 100% 68%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 120 15% 85%;
-    --input: 120 15% 90%;
-    --ring: 142 71% 45%;
+    --border: 0 0% 90%;
+    --input: 0 0% 95%;
+    --ring: 84 100% 68%;
 
     /* Custom SwapMe colors */
-    --success: 142 71% 45%;
-    --success-foreground: 120 25% 98%;
-    --eco-green: 138 65% 35%;
-    --eco-light: 138 45% 85%;
-    --nature: 100 40% 40%;
+    --success: 84 100% 68%;
+    --success-foreground: 0 0% 0%;
+    --eco-green: 84 100% 68%;
+    --eco-light: 84 100% 85%;
+    --nature: 84 100% 68%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(142, 71%, 45%), hsl(138, 65%, 35%));
-    --gradient-eco: linear-gradient(180deg, hsl(138, 45%, 85%), hsl(120, 15%, 96%));
-    --gradient-hero: linear-gradient(135deg, hsl(142, 71%, 45%) 0%, hsl(138, 65%, 35%) 50%, hsl(100, 40%, 40%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(84, 100%, 68%), hsl(250, 100%, 65%));
+    --gradient-eco: linear-gradient(180deg, hsl(84, 100%, 85%), hsl(0, 0%, 99%));
+    --gradient-hero: linear-gradient(135deg, hsl(84, 100%, 68%) 0%, hsl(250, 100%, 65%) 50%, hsl(84, 100%, 68%) 100%);
 
     /* Shadows */
-    --shadow-eco: 0 10px 30px -10px hsl(142 71% 45% / 0.2);
-    --shadow-glow: 0 0 40px hsl(142 65% 55% / 0.15);
+    --shadow-eco: 0 10px 30px -10px hsl(84 100% 68% / 0.2);
+    --shadow-glow: 0 0 40px hsl(84 100% 75% / 0.15);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -76,50 +76,50 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 120 15% 8%;
-    --foreground: 120 20% 95%;
+    --background: 0 0% 3%;
+    --foreground: 0 0% 95%;
 
-    --card: 120 15% 10%;
-    --card-foreground: 120 20% 95%;
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 120 15% 8%;
-    --popover-foreground: 120 20% 95%;
+    --popover: 0 0% 3%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 142 65% 55%;
-    --primary-foreground: 120 15% 8%;
-    --primary-glow: 142 71% 45%;
+    --primary: 84 100% 68%;
+    --primary-foreground: 0 0% 0%;
+    --primary-glow: 84 100% 75%;
 
-    --secondary: 120 10% 20%;
-    --secondary-foreground: 120 20% 85%;
+    --secondary: 250 100% 65%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 120 10% 15%;
-    --muted-foreground: 120 10% 55%;
+    --muted: 0 0% 9%;
+    --muted-foreground: 0 0% 80%;
 
-    --accent: 138 35% 25%;
-    --accent-foreground: 120 20% 85%;
+    --accent: 84 100% 68%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 62.8% 50%;
-    --destructive-foreground: 120 20% 95%;
+    --destructive-foreground: 0 0% 95%;
 
-    --border: 120 10% 20%;
-    --input: 120 10% 15%;
-    --ring: 142 65% 55%;
+    --border: 0 0% 16%;
+    --input: 0 0% 9%;
+    --ring: 84 100% 68%;
 
     /* Custom SwapMe dark colors */
-    --success: 142 65% 55%;
-    --success-foreground: 120 15% 8%;
-    --eco-green: 138 55% 45%;
-    --eco-light: 138 35% 25%;
-    --nature: 100 35% 50%;
+    --success: 84 100% 68%;
+    --success-foreground: 0 0% 0%;
+    --eco-green: 84 100% 68%;
+    --eco-light: 84 100% 75%;
+    --nature: 84 100% 68%;
 
     /* Dark gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(142, 65%, 55%), hsl(138, 55%, 45%));
-    --gradient-eco: linear-gradient(180deg, hsl(138, 35%, 25%), hsl(120, 15%, 10%));
-    --gradient-hero: linear-gradient(135deg, hsl(142, 65%, 55%) 0%, hsl(138, 55%, 45%) 50%, hsl(100, 35%, 50%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(84, 100%, 68%), hsl(250, 100%, 65%));
+    --gradient-eco: linear-gradient(180deg, hsl(84, 100%, 75%), hsl(0, 0%, 6%));
+    --gradient-hero: linear-gradient(135deg, hsl(84, 100%, 68%) 0%, hsl(250, 100%, 65%) 50%, hsl(84, 100%, 68%) 100%);
 
     /* Dark shadows */
-    --shadow-eco: 0 10px 30px -10px hsl(142 65% 55% / 0.3);
-    --shadow-glow: 0 0 40px hsl(142 71% 45% / 0.25);
+    --shadow-eco: 0 10px 30px -10px hsl(84 100% 68% / 0.3);
+    --shadow-glow: 0 0 40px hsl(84 100% 75% / 0.25);
   }
 }
 

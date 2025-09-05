@@ -57,7 +57,7 @@ const ScrollNavbar = () => {
                 alt="SwapMe"
                 className="h-10 w-10 text-primary-foreground rounded-xl"
               />
-              <span className="text-xl font-bold text-foreground">SwapMe</span>
+              <span className="text-xl font-bold text-secondary">SwapMe</span>
             </div>
 
             {/* Desktop Navigation */}

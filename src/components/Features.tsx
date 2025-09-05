@@ -88,7 +88,7 @@ const Features = () => {
           
           <h2 className="text-3xl lg:text-5xl font-bold text-foreground">
             Todo lo que necesitas para
-            <span className="text-transparent bg-gradient-primary bg-clip-text"> intercambiar ropa</span>
+            <span className="text-transparent bg-primary bg-clip-text"> intercambiar ropa</span>
           </h2>
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">

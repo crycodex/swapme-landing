@@ -8,7 +8,7 @@ import {
   RefreshCw,
   Leaf,
 } from "lucide-react";
-import appMockup from "@/assets/app-mockup.jpg";
+import appMockup from "@/assets/app-mockup.png";
 
 const Hero = () => {
   return (
@@ -45,7 +45,7 @@ const Hero = () => {
               <div className="flex items-center space-x-2">
                 <Users className="h-5 w-5 text-primary" />
                 <div>
-                  <p className="font-semibold text-lg">1K+</p>
+                  <p className="font-semibold text-lg">100+</p>
                   <p className="text-sm text-muted-foreground">
                     Usuarios Activos
                   </p>
@@ -55,7 +55,7 @@ const Hero = () => {
               <div className="flex items-center space-x-2">
                 <RefreshCw className="h-5 w-5 text-primary" />
                 <div>
-                  <p className="font-semibold text-lg">500+</p>
+                  <p className="font-semibold text-lg">100+</p>
                   <p className="text-sm text-muted-foreground">
                     Intercambios Realizados
                   </p>
@@ -75,15 +75,18 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="group">
-                <Download className="h-5 w-5 mr-2" />
-                Descargar App
-                <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
+              <Button variant="hero" size="lg" asChild>
+                <a href="#download">
+                  <Download className="h-5 w-5 mr-2" />
+                  Descargar App
+                </a>
               </Button>
 
-              <Button variant="secondary" size="lg">
-                Ver Promo
-              </Button>
+                <Button variant="secondary" size="lg" asChild>
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=4rVaI6tD-TA">
+                  Ver Promo
+                  </a>
+                </Button>
             </div>
 
             <p className="text-sm text-muted-foreground">
@@ -97,7 +100,7 @@ const Hero = () => {
               <img
                 src={appMockup}
                 alt="SwapMe App Interface"
-                className="w-full max-w-sm mx-auto rounded-3xl shadow-glow"
+                className="w-full max-w-sm mx-auto rounded-3xl"
               />
 
               {/* Floating Elements */}

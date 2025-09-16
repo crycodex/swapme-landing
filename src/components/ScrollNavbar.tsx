@@ -19,9 +19,7 @@ const ScrollNavbar = () => {
   const navItems = [
     { href: "#inicio", label: "Inicio" },
     { href: "#caracteristicas", label: "Características" },
-    { href: "#como-funciona", label: "Cómo Funciona" },
-    { href: "#acerca-de", label: "Acerca de" },
-    { href: "#contacto", label: "Contacto" },
+    { href: "#how-it-works", label: "Cómo Funciona" },
   ];
 
   return (
@@ -88,8 +86,9 @@ const ScrollNavbar = () => {
                   className={`transition-all duration-300 ${
                     isScrolled ? "text-xs px-4" : "text-sm px-6"
                   }`}
+                  asChild
                 >
-                  Descargar App
+                  <a href="#download">Descargar App</a>
                 </Button>
               </div>
 
@@ -129,8 +128,8 @@ const ScrollNavbar = () => {
               ))}
 
               <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="hero" size="sm" className="w-full">
-                  Descargar App
+                <Button variant="hero" size="sm" className="w-full" asChild>
+                  <a href="#download">Descargar App</a>
                 </Button>
               </div>
             </nav>

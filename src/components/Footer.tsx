@@ -11,9 +11,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2 space-y-6">
             <div className="flex items-center space-x-2">
-              <div className="bg-gradient-primary p-2 rounded-xl">
-                <Shirt className="h-6 w-6 text-primary-foreground" />
-              </div>
+              <img src="/imgs/logo_ligth.png" alt="SwapMe" className="h-10 w-10 rounded-xl" />
               <span className="text-2xl font-bold">SwapMe</span>
             </div>
             

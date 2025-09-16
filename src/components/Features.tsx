@@ -105,8 +105,8 @@ const Features = () => {
               <Card key={index} className="card-modern group">
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between mb-4">
-                    <div className="card-icon">
-                      <IconComponent className="h-6 w-6" />
+                    <div className={`card-icon ${feature.color}`}>
+                      <IconComponent className="h-6 w-6 " />
                     </div>
                     {feature.badge && (
                       <Badge variant="secondary" className="text-xs font-medium">

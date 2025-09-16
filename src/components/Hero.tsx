@@ -10,6 +10,16 @@ import {
 } from "lucide-react";
 import appMockup from "@/assets/app-mockup.png";
 
+const scrollToSection = (sectionId: string) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+};
+
 const Hero = () => {
   return (
     <section className="relative py-20 lg:py-32 overflow-hidden">
@@ -75,11 +85,13 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" asChild>
-                <a href="#download">
-                  <Download className="h-5 w-5 mr-2" />
-                  Descargar App
-                </a>
+              <Button 
+                variant="hero" 
+                size="lg" 
+                onClick={() => scrollToSection('download')}
+              >
+                <Download className="h-5 w-5 mr-2" />
+                Descargar App
               </Button>
 
                 <Button variant="secondary" size="lg" asChild>

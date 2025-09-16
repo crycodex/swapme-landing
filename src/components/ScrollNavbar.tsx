@@ -3,6 +3,16 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { Shirt, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
+const scrollToSection = (sectionId: string) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+};
+
 const ScrollNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -65,13 +75,13 @@ const ScrollNavbar = () => {
               }`}
             >
               {navItems.map((item) => (
-                <a
+                <button
                   key={item.href}
-                  href={item.href}
+                  onClick={() => scrollToSection(item.href.replace('#', ''))}
                   className="story-link text-foreground hover:text-primary transition-colors text-sm font-medium"
                 >
                   {item.label}
-                </a>
+                </button>
               ))}
             </nav>
 
@@ -86,9 +96,9 @@ const ScrollNavbar = () => {
                   className={`transition-all duration-300 ${
                     isScrolled ? "text-xs px-4" : "text-sm px-6"
                   }`}
-                  asChild
+                  onClick={() => scrollToSection('download')}
                 >
-                  <a href="#download">Descargar App</a>
+                  Descargar App
                 </Button>
               </div>
 
@@ -117,19 +127,29 @@ const ScrollNavbar = () => {
           >
             <nav className="flex flex-col space-y-3">
               {navItems.map((item) => (
-                <a
+                <button
                   key={item.href}
-                  href={item.href}
-                  className="story-link text-foreground hover:text-primary transition-colors py-2 text-sm font-medium"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    scrollToSection(item.href.replace('#', ''));
+                    setIsMenuOpen(false);
+                  }}
+                  className="story-link text-foreground hover:text-primary transition-colors py-2 text-sm font-medium text-left"
                 >
                   {item.label}
-                </a>
+                </button>
               ))}
 
               <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="hero" size="sm" className="w-full" asChild>
-                  <a href="#download">Descargar App</a>
+                <Button 
+                  variant="hero" 
+                  size="sm" 
+                  className="w-full"
+                  onClick={() => {
+                    scrollToSection('download');
+                    setIsMenuOpen(false);
+                  }}
+                >
+                  Descargar App
                 </Button>
               </div>
             </nav>

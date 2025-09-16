@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div className="space-y-6">
+          {/* <div className="space-y-6">
             <h3 className="text-lg font-semibold">Mantente Actualizado</h3>
             <p className="text-background/80">
               Suscríbete para recibir noticias sobre nuevas funciones y consejos de moda sostenible.
@@ -74,7 +74,7 @@ const Footer = () => {
                 Suscribirse
               </Button>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Social Links & Copyright */}

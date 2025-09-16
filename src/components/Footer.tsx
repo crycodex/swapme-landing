@@ -28,12 +28,12 @@ const Footer = () => {
               
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-primary" />
-                <span className="text-background/80">+1 (555) 123-4567</span>
+                <span className="text-background/80">+593 996221950</span>
               </div>
               
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-primary" />
-                <span className="text-background/80">Quito, Ecuador</span>
+                <span className="text-background/80">Ibarra, Ecuador</span>
               </div>
             </div>
           </div>
@@ -47,12 +47,6 @@ const Footer = () => {
               </a>
               <a href="#how-it-works" className="text-background/80 hover:text-primary transition-colors">
                 Cómo Funciona
-              </a>
-              <a href="#about" className="text-background/80 hover:text-primary transition-colors">
-                Acerca de
-              </a>
-              <a href="#contact" className="text-background/80 hover:text-primary transition-colors">
-                Contacto
               </a>
               <a href="/privacy" className="text-background/80 hover:text-primary transition-colors">
                 Privacidad
@@ -86,32 +80,10 @@ const Footer = () => {
         {/* Social Links & Copyright */}
         <div className="border-t border-background/20 pt-8 mt-12">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="flex space-x-4">
-              <a 
-                href="#" 
-                className="p-2 rounded-lg bg-background/10 hover:bg-primary/20 transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a 
-                href="#" 
-                className="p-2 rounded-lg bg-background/10 hover:bg-primary/20 transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a 
-                href="#" 
-                className="p-2 rounded-lg bg-background/10 hover:bg-primary/20 transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-            </div>
+      
             
             <p className="text-background/60 text-sm">
-              © 2024 SwapMe. Todos los derechos reservados. Hecho con ❤️ para un futuro más sostenible.
+              © 2025 SwapMe. Todos los derechos reservados. Hecho con ❤️ para un futuro más sostenible.
             </p>
           </div>
         </div>

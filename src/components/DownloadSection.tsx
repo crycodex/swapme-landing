@@ -9,6 +9,8 @@ import {
   Shield,
   Zap,
 } from "lucide-react";
+import playStore from "@/assets/play.png";
+import appStore from "@/assets/appstore.png";
 
 const DownloadSection = () => {
   const features = [
@@ -32,14 +34,14 @@ const DownloadSection = () => {
   const storeButtons = [
     {
       name: "Google Play",
-      icon: "📱",
+      icon: playStore,
       url: "#",
       description: "Disponible en Android",
       badge: "4.2★",
     },
     {
       name: "App Store",
-      icon: "🍎",
+      icon: appStore,
       url: "#",
       description: "Disponible en iOS",
       badge: "4.5★",
@@ -104,7 +106,8 @@ const DownloadSection = () => {
             {storeButtons.map((store, index) => (
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 bg-card/80 backdrop-blur-sm hover:scale-105">
                 <CardContent className="p-8 text-center min-w-[280px]">
-                  <div className="text-6xl mb-4">{store.icon}</div>
+                  <div className="text-6xl mb-4 flex items-center justify-center">
+                    <img src={store.icon} alt={store.name} className="w-16 h-16 object-contain" /></div>
                   
                   <div className="flex items-center justify-center space-x-2 mb-2">
                     <h3 className="text-xl font-bold text-foreground">{store.name}</h3>
@@ -131,37 +134,17 @@ const DownloadSection = () => {
             ))}
           </div>
 
-          {/* Features */}
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {features.map((feature, index) => {
-              const IconComponent = feature.icon;
-              return (
-                <div key={index} className="text-center group">
-                  <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <IconComponent className="h-8 w-8 text-primary" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">
-                    {feature.title}
-                  </h3>
-                  <p className="text-muted-foreground">
-                    {feature.description}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-
           {/* Additional Info */}
           <div className="text-center">
             <div className="inline-flex items-center space-x-2 bg-success/10 rounded-full px-6 py-3 mb-4">
               <div className="w-2 h-2 bg-success rounded-full animate-pulse"></div>
               <span className="text-sm font-medium text-foreground">
-                Disponible en español e inglés
+                Disponible en español
               </span>
             </div>
             
             <p className="text-muted-foreground text-sm">
-              Requiere iOS 12.0+ o Android 5.0+ • Tamaño: ~50MB • Actualización automática
+              Requiere iOS 15.0+ o Android 7.0+ • Tamaño: ~80MB • Actualización automática
             </p>
           </div>
         </div>

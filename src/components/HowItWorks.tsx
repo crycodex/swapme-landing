@@ -99,27 +99,6 @@ const HowItWorks = () => {
           })}
         </div>
 
-        {/* Additional Features */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {features.map((feature, index) => {
-            const IconComponent = feature.icon;
-            return (
-              <div key={index} className="flex items-start space-x-4 p-6 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/50">
-                <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
-                  <IconComponent className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">
-                    {feature.title}
-                  </h3>
-                  <p className="text-muted-foreground">
-                    {feature.description}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
 
         {/* CTA Section */}
         <div className="text-center mt-16">

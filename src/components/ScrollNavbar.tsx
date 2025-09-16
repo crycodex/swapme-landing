@@ -30,7 +30,7 @@ const ScrollNavbar = () => {
     >
       <div
         className={`container mx-auto px-4 transition-all duration-500 ease-out ${
-          isScrolled ? "max-w-4xl" : "max-w-7xl"
+          isScrolled ? "max-w-3xl" : "max-w-7xl"
         }`}
       >
         <div

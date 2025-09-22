@@ -8,75 +8,103 @@ const Terms = () => {
   const sections = [
     {
       icon: Users,
-      title: "Uso de la Aplicación",
+      title: "1. Aceptación de los Términos",
       content: [
-        "Debes ser mayor de 18 años para usar SwapMe",
-        "Solo puedes crear una cuenta por persona",
-        "Eres responsable de mantener la seguridad de tu cuenta",
-        "Debes proporcionar información veraz y actualizada",
-        "No puedes usar la aplicación para actividades ilegales",
-        "Debes respetar a otros usuarios y sus derechos"
+        "Al usar SwapMe, aceptas estos términos de servicio y nuestra política de privacidad",
+        "Si no estás de acuerdo con alguno de estos términos, no debes usar nuestra aplicación",
+        "El uso continuado de la aplicación constituye aceptación de estos términos"
       ]
     },
     {
       icon: FileText,
-      title: "Contenido y Productos",
+      title: "2. Contenido Generado por Usuarios",
       content: [
-        "Eres responsable del contenido que publicas",
-        "Las fotos deben ser propias o tener derechos de uso",
-        "Los productos deben estar en buenas condiciones",
-        "No puedes vender productos ilegales o peligrosos",
-        "Debes describir honestamente el estado de los productos",
-        "SwapMe no se hace responsable por la calidad de los productos"
-      ]
-    },
-    {
-      icon: Scale,
-      title: "Intercambios y Transacciones",
-      content: [
-        "Los intercambios son responsabilidad de los usuarios",
-        "SwapMe facilita la conexión, no garantiza transacciones",
-        "Los usuarios deben coordinar la entrega entre ellos",
-        "No hay reembolsos por intercambios realizados",
-        "Los problemas entre usuarios deben resolverse directamente",
-        "SwapMe puede mediar en disputas si es necesario"
+        "No publicar contenido inapropiado, ofensivo, ilegal o que viole los derechos de otros",
+        "No usar la aplicación para spam, acoso o intimidación",
+        "No compartir información personal de otros usuarios",
+        "No publicar contenido falso o engañoso",
+        "No usar la aplicación para actividades comerciales no autorizadas"
       ]
     },
     {
       icon: Shield,
-      title: "Prohibiciones",
+      title: "3. Política de Tolerancia Cero",
       content: [
-        "No publicar contenido ofensivo o inapropiado",
-        "No hacer spam o publicidad no autorizada",
-        "No intentar hackear o dañar la aplicación",
-        "No crear cuentas falsas o impersonar a otros",
-        "No usar la aplicación para actividades comerciales no autorizadas",
-        "No compartir información personal de otros usuarios"
+        "Contenido sexual o pornográfico",
+        "Acoso, bullying o intimidación",
+        "Discriminación por raza, género, religión u orientación sexual",
+        "Violencia o amenazas",
+        "Spam o contenido fraudulento",
+        "Productos falsos o engañosos"
+      ]
+    },
+    {
+      icon: Scale,
+      title: "4. Moderación de Contenido",
+      content: [
+        "Revisar y moderar todo el contenido generado por usuarios",
+        "Remover contenido que viole estos términos",
+        "Suspender o banear cuentas que violen nuestras políticas",
+        "Actuar sobre reportes de contenido inapropiado dentro de 24 horas"
+      ]
+    },
+    {
+      icon: Users,
+      title: "5. Sistema de Reportes",
+      content: [
+        "Los usuarios pueden reportar contenido inapropiado o usuarios abusivos",
+        "Todos los reportes serán revisados y actuados dentro de 24 horas",
+        "Los usuarios que violen repetidamente estos términos serán permanentemente suspendidos",
+        "Mantenemos un registro de todas las violaciones para seguimiento"
+      ]
+    },
+    {
+      icon: Shield,
+      title: "6. Bloqueo de Usuarios",
+      content: [
+        "Los usuarios pueden bloquear a otros usuarios que consideren abusivos",
+        "Los usuarios bloqueados no podrán contactar al usuario que los bloqueó",
+        "El bloqueo es inmediato y efectivo",
+        "Los usuarios bloqueados no recibirán notificación del bloqueo"
       ]
     }
   ];
 
-  const responsibilities = [
+  const additionalSections = [
     {
-      title: "Responsabilidades del Usuario",
+      title: "7. Responsabilidad del Usuario",
       items: [
-        "Verificar la identidad de otros usuarios antes de intercambiar",
-        "Tomar fotos claras y honestas de los productos",
-        "Comunicarse de manera respetuosa con otros usuarios",
-        "Reportar contenido inapropiado o usuarios problemáticos",
-        "Mantener actualizada la información de su perfil",
-        "Cumplir con las leyes locales aplicables"
+        "El contenido que publican en la aplicación",
+        "Las interacciones con otros usuarios",
+        "Cumplir con todas las leyes aplicables",
+        "Mantener la seguridad de su cuenta"
       ]
     },
     {
-      title: "Responsabilidades de SwapMe",
+      title: "8. Limitación de Responsabilidad",
       items: [
-        "Proporcionar una plataforma segura y funcional",
-        "Proteger la información personal de los usuarios",
-        "Responder a reportes de contenido inapropiado",
-        "Mantener la aplicación actualizada y sin errores",
-        "Proporcionar soporte técnico cuando sea necesario",
-        "Cumplir con las regulaciones de privacidad de datos"
+        "SwapMe no se hace responsable por el contenido generado por usuarios",
+        "Las interacciones entre usuarios son responsabilidad de los mismos",
+        "Las transacciones realizadas fuera de la aplicación no son responsabilidad de SwapMe",
+        "No garantizamos la calidad o autenticidad de los productos intercambiados"
+      ]
+    },
+    {
+      title: "9. Modificaciones",
+      items: [
+        "Nos reservamos el derecho de modificar estos términos en cualquier momento",
+        "Los usuarios serán notificados de cambios significativos",
+        "El uso continuado después de los cambios constituye aceptación",
+        "Los cambios entrarán en vigor inmediatamente después de la notificación"
+      ]
+    },
+    {
+      title: "10. Contacto",
+      items: [
+        "Para reportar violaciones de estos términos: support@swapme.app",
+        "Para preguntas sobre moderación: moderation@swapme.app",
+        "Para soporte general: recaldecd@gmail.com",
+        "Respuesta garantizada dentro de 24 horas"
       ]
     }
   ];
@@ -178,43 +206,58 @@ const Terms = () => {
               );
             })}
 
-            {/* Responsibilities */}
-            <div className="grid md:grid-cols-2 gap-8">
-              {responsibilities.map((section, index) => (
-                <Card key={index} className="border-0 bg-card/50 backdrop-blur-sm">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold text-foreground mb-4">
-                      {section.title}
-                    </h3>
-                    <ul className="space-y-2">
-                      {section.items.map((item, itemIndex) => (
-                        <li key={itemIndex} className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                          <span className="text-muted-foreground text-sm">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+            {/* Additional Sections */}
+            {additionalSections.map((section, index) => (
+              <Card key={index} className="border-0 bg-card/50 backdrop-blur-sm">
+                <CardContent className="p-8">
+                  <h2 className="text-2xl font-bold text-foreground mb-4">
+                    {section.title}
+                  </h2>
+                  <ul className="space-y-3">
+                    {section.items.map((item, itemIndex) => (
+                      <li key={itemIndex} className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                        <span className="text-muted-foreground">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            ))}
 
-            {/* Important Notices */}
-            <Card className="border-0 bg-gradient-to-r from-orange-500/10 to-red-500/10 border-l-4 border-orange-500">
+            {/* Security Commitment */}
+            <Card className="border-0 bg-gradient-to-r from-primary/10 to-eco-green/10 border-l-4 border-primary">
               <CardContent className="p-8">
                 <div className="flex items-start space-x-4">
-                  <AlertTriangle className="h-6 w-6 text-orange-500 flex-shrink-0 mt-1" />
+                  <Shield className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="text-xl font-bold text-foreground mb-4">
-                      Avisos Importantes
+                      Compromiso de Seguridad
                     </h3>
-                    <ul className="space-y-3 text-muted-foreground">
-                      <li>• SwapMe es una plataforma de conexión, no un vendedor de productos</li>
-                      <li>• Los intercambios son responsabilidad exclusiva de los usuarios</li>
-                      <li>• No garantizamos la calidad o autenticidad de los productos</li>
-                      <li>• Nos reservamos el derecho de suspender cuentas que violen estos términos</li>
-                      <li>• Estos términos pueden cambiar sin previo aviso</li>
-                    </ul>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Nos comprometemos a mantener un entorno seguro y respetuoso para todos nuestros usuarios. 
+                      Si encuentras contenido inapropiado, repórtalo inmediatamente y actuaremos dentro de 24 horas.
+                    </p>
+                    <div className="mt-4 space-y-2">
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-primary rounded-full"></div>
+                        <span className="text-sm text-muted-foreground">
+                          Moderación activa 24/7
+                        </span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-primary rounded-full"></div>
+                        <span className="text-sm text-muted-foreground">
+                          Respuesta garantizada en 24 horas
+                        </span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <div className="w-2 h-2 bg-primary rounded-full"></div>
+                        <span className="text-sm text-muted-foreground">
+                          Política de tolerancia cero para abuso
+                        </span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -251,11 +294,28 @@ const Terms = () => {
                   sobre cualquier aspecto de la aplicación, contáctanos.
                 </p>
                 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <div className="flex items-center space-x-3">
+                <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                  <div className="flex flex-col items-center space-y-2">
                     <Mail className="h-5 w-5 text-primary" />
-                    <span className="text-foreground">recaldecd@gmail.com</span>
+                    <span className="text-sm font-medium text-foreground">Soporte General</span>
+                    <span className="text-sm text-muted-foreground">recaldecd@gmail.com</span>
                   </div>
+                  <div className="flex flex-col items-center space-y-2">
+                    <Shield className="h-5 w-5 text-primary" />
+                    <span className="text-sm font-medium text-foreground">Reportar Violaciones</span>
+                    <span className="text-sm text-muted-foreground">ecaldecd@gmail.com</span>
+                  </div>
+                  <div className="flex flex-col items-center space-y-2">
+                    <AlertTriangle className="h-5 w-5 text-primary" />
+                    <span className="text-sm font-medium text-foreground">Moderación</span>
+                    <span className="text-sm text-muted-foreground">ecaldecd@gmail.com</span>
+                  </div>
+                </div>
+                
+                <div className="mt-6 p-4 bg-primary/10 rounded-lg">
+                  <p className="text-sm text-muted-foreground">
+                    <strong>Respuesta garantizada dentro de 24 horas</strong>
+                  </p>
                 </div>
               </CardContent>
             </Card>
